@@ -14,7 +14,7 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
         <div class="container">
             <a href="#" class="navbar-brand"><i class="bi bi-mortarboard h3"></i> Frontend Bootcamp BS5 </a>
                 <button 
@@ -49,7 +49,7 @@
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                         Quidem at ut, obcaecati vitae laboriosam sed?
                     </p>
-                    <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#proje">Projenize Teklif Alın</button>
+                    <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#proje">Projeniz İçin Teklif Alın</button>
 
                 </div>
                 <img class="img-fluid w-50 ps-5 d-none d-sm-block" src="img/programmer.svg" alt="">
@@ -338,13 +338,13 @@
 
     <!-- Footer -->
 
-    <footer class="p-5 bg-dark text-center text-white position-relative">
+    <footer class="p-2 bg-dark text-center text-white position-relative">
         <div class="container">
-            <p class="lead">
+            <p>
                 Copyright &copy; 2022 Frontend Bootcamp
             </p>
-            <p>Made with <i class="bi bi-heart-fill text-danger mx-1"></i> by Mehmet Serdar on <a href="https://github.com/mehmetserdar">  <i class="bi bi-github text-white mx-1"></i></a></p>
-            <a href="#" class="position-absolute bottom-0 end-0 p-5">
+            <p class="small">Made with <i class="bi bi-heart-fill text-danger mx-1"></i> by Mehmet Serdar on <a href="https://github.com/mehmetserdar" target="_blank">  <i class="bi bi-github text-white mx-1"></i></a></p>
+            <a href="#" class="position-absolute bottom-0 end-0 p-2">
                 <i class="bi bi-arrow-up-circle h1"></i>
             </a>
         </div>
@@ -354,36 +354,27 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <h5 class="modal-title" id="exampleModalLabel">Projeniz İçin Teklif Alın</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
             </div>
             <div class="modal-body">
               <p class="lead">Bu formu doldurun, en kısa sürede size geri dönelim</p>
               <form>
-                <div class="mb-3">
-                    <label for="first-name" class="col-form-label">
-                        Adınız:
-                    </label>
-                    <input type="text" class="form-control" id="first-name">
+                <div class="mb-3">                   
+                    <input type="text" class="form-control" id="first-name" placeholder="Adınız">
                 </div>
                 <div class="mb-3">
-                    <label for="last-name" class="col-form-label">
-                        Soyadınız:
-                    </label>
-                    <input type="text" class="form-control" id="last-name">
+                    <input type="text" class="form-control" id="last-name" placeholder="Soyadınız">
                 </div>  
                 <div class="mb-3">
-                    <label for="email" class="col-form-label">
-                        E-Posta:
-                    </label>
-                    <input type="text" class="form-control" id="email">
+                    <input type="text" class="form-control" id="email" placeholder="E-Postanız">
                 </div>  
                 <div class="mb-3">
-                    <label for="phone" class="col-form-label">
-                        Telefon:
-                    </label>
-                    <input type="text" class="form-control" id="phone">
-                </div>    
+                    <input type="text" class="form-control" id="phone" placeholder="Telefonunuz">
+                </div>  
+                <div class="mb-3">
+                    <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Proje Detayları"></textarea>
+                </div>  
               </form>
             </div>
             <div class="modal-footer">
